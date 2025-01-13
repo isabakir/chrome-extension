@@ -1,0 +1,64 @@
+.ai-suggestion-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.ai-suggestion-button:hover {
+    background-color: #0056b3;
+}
+
+.suggestion-box {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    max-width: 300px;
+}
+
+.suggestion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suggestion-content p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.accept-suggestion, .reject-suggestion {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.accept-suggestion {
+    background-color: #28a745;
+    color: white;
+}
+
+.reject-suggestion {
+    background-color: #dc3545;
+    color: white;
+}
+
+.accept-suggestion:hover {
+    background-color: #218838;
+}
+
+.reject-suggestion:hover {
+    background-color: #c82333;
+} 

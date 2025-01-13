@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Freshchat Assistant",
+    "version": "1.0",
+    "description": "Freshchat mesajları için AI destekli yanıt önerileri",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://wchat.freshchat.com/*",
+        "*://*.freshchat.com/*",
+        "*://*.myfreshworks.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://wchat.freshchat.com/*",
+                "*://*.freshchat.com/*",
+                "*://*.myfreshworks.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ],
+            "css": [
+                "css/styles.css"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "match_about_blank": true
+        }
+    ],
+    "icons": {
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
